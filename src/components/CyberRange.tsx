@@ -49,9 +49,6 @@ const CyberRange = () => {
             <Shield className="w-12 h-12 text-cyber" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">Cyber Range</h2>
           </div>
-          <p className="text-2xl text-foreground/90 max-w-3xl mx-auto mb-2 font-semibold">
-            Hollywood Meets IT Training
-          </p>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Enhance your cybersecurity skills with a cutting-edge practical training environment designed to keep you ahead of emerging threats.
           </p>
