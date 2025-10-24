@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Cloud, Database, Lock, Network, Server, Settings } from "lucide-react";
+import { Cloud, Database, Lock, Network, Server, Settings, Shield, Box } from "lucide-react";
 
 const AzureRange = () => {
   const services = [
@@ -28,23 +28,27 @@ const AzureRange = () => {
     {
       title: "Azure Storage Sandbox",
       description: "Work with blobs, shared access signatures, and tools for uploading, securing, and managing data.",
-      launchTime: "2 min",
-      runTime: "120 min",
       icon: Database,
     },
     {
       title: "Azure Networking Sandbox",
       description: "Manage virtual networks, peering, public IPs, and troubleshooting connectivity.",
-      launchTime: "2 min",
-      runTime: "120 min",
       icon: Network,
     },
     {
       title: "Azure Compute Sandbox",
       description: "Manage and configure virtual machines, extensions, and automation tools like cloud-init and scripts.",
-      launchTime: "3 min",
-      runTime: "120 min",
       icon: Server,
+    },
+    {
+      title: "Azure Firewall Sandbox",
+      description: "Connect securely to VMs via Azure Bastion without exposing public IPs. Practice using Azure Firewall as a transitive routing hub. Use the two Linux VMs in different spokes to ping each other, verifying NSG rules, Firewall policies, and Route tables. Validate Firewall Policy behavior using network rules that allow traffic between spoke VNets.",
+      icon: Shield,
+    },
+    {
+      title: "Azure Base Sandbox",
+      description: "Empty Resource Group for testing new ideas or building from the ground up.",
+      icon: Box,
     },
   ];
 
@@ -68,22 +72,14 @@ const AzureRange = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           {sandboxes.map((sandbox, index) => {
             const Icon = sandbox.icon;
             return (
               <Card key={index} className="p-6 bg-card/50 backdrop-blur border-azure/20 hover:border-azure/50 transition-all hover:scale-105">
                 <Icon className="w-10 h-10 text-azure mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-foreground">{sandbox.title}</h3>
-                <p className="text-foreground/70 mb-4">{sandbox.description}</p>
-                <div className="flex gap-4 text-sm">
-                  <Badge variant="secondary" className="bg-azure/20 text-azure border-azure/30">
-                    Launch: {sandbox.launchTime}
-                  </Badge>
-                  <Badge variant="secondary" className="bg-azure/20 text-azure border-azure/30">
-                    Run: {sandbox.runTime}
-                  </Badge>
-                </div>
+                <p className="text-foreground/70">{sandbox.description}</p>
               </Card>
             );
           })}
