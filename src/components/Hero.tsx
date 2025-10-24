@@ -35,7 +35,7 @@ const Hero = () => {
     {
       id: "cyber-range",
       title: "Cyber Range",
-      description: "Develop offensive and defensive security skills in realistic attack scenarios",
+      description: "Develop security skills in a real world environment through Capture the Flag activities using applications like Splunk, Wireshark, OpenVas, and NMap",
       image: cyberImage,
       color: "cyber"
     }
