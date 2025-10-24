@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Cloud, Database, Lock, Network, Server, Settings } from "lucide-react";
 
 const AzureRange = () => {
@@ -58,6 +59,13 @@ const AzureRange = () => {
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Direct access to Azure cloud services. Practice and skill up on cloud technologies directly in Azure with a sandboxed environment.
           </p>
+          <div className="mt-6">
+            <Button asChild variant="default" size="lg">
+              <a href="https://app.stormwindstudios.com/replay/153441/introduction-azure-range" target="_blank" rel="noopener noreferrer">
+                View Video
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">

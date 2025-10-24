@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Shield, Target, Award, Zap, Eye, TrendingUp } from "lucide-react";
 
 const CyberRange = () => {
@@ -52,6 +53,13 @@ const CyberRange = () => {
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Enhance your cybersecurity skills with a cutting-edge practical training environment designed to keep you ahead of emerging threats.
           </p>
+          <div className="mt-6">
+            <Button asChild variant="default" size="lg">
+              <a href="https://fast.wistia.com/embed/channel/ldye5f7b67?wchannelid=ldye5f7b67&wmediaid=gg8rfkzk3y" target="_blank" rel="noopener noreferrer">
+                View Video
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

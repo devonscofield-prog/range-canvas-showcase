@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Server, HardDrive, Users, Shield } from "lucide-react";
 
 const MicrosoftRange = () => {
@@ -60,6 +61,13 @@ const MicrosoftRange = () => {
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Master Microsoft technologies and Windows infrastructure with hands-on experience in enterprise environments.
           </p>
+          <div className="mt-6">
+            <Button asChild variant="default" size="lg">
+              <a href="https://app.stormwindstudios.com/replay/169553/introduction-microsoft-range" target="_blank" rel="noopener noreferrer">
+                View Video
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

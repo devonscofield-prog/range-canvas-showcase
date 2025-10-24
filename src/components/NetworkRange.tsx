@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Network, Router, Cable, Globe } from "lucide-react";
 
 const NetworkRange = () => {
@@ -72,6 +73,13 @@ const NetworkRange = () => {
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             A dynamic networking sandbox with routers, multi-layer switches, and connected hosts. From simple setups to advanced architectures.
           </p>
+          <div className="mt-6">
+            <Button asChild variant="default" size="lg">
+              <a href="https://app.stormwindstudios.com/replay/138929/introduction-net-range" target="_blank" rel="noopener noreferrer">
+                View Video
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="mb-12">
