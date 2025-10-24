@@ -42,7 +42,7 @@ const AzureRange = () => {
     },
     {
       title: "Azure Firewall Sandbox",
-      description: "Connect securely to VMs via Azure Bastion without exposing public IPs. Practice using Azure Firewall as a transitive routing hub. Use the two Linux VMs in different spokes to ping each other, verifying NSG rules, Firewall policies, and Route tables. Validate Firewall Policy behavior using network rules that allow traffic between spoke VNets.",
+      description: "Connect to virtual machines seamlessly via Azure Bastion. Explore Azure Firewall as a powerful transitive routing hub, and validate its policies, NSG rules, and routes through real-world VM-to-VM communication across spoke networks.",
       icon: Shield,
     },
     {
